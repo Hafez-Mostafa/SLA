@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definion für SLAKUNDE'
+define service ZSD_SLAKUNDE {
+  expose ZC_SLAKUNDE;
+  expose ZC_SLA_Vereinbar;
+}

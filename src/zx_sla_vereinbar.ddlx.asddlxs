@@ -1,0 +1,40 @@
+@Metadata.layer: #CORE
+annotate entity ZC_SLA_Vereinbar with
+{
+
+
+@UI.facet: [{ id: 'SLAVERINBAR' ,
+purpose: #STANDARD,
+type: #IDENTIFICATION_REFERENCE,
+label: 'VERINBARUNG',
+position: 10 }]
+  @UI.lineItem: [{ position: 10,label: 'SLA ID' }]
+  @UI.identification: [{ position: 10 }]
+  SlaId;
+  @UI.lineItem: [{ position: 20,label: 'Kunden ID' }]
+  @UI.identification: [{ position: 20 }]
+  VkundenId;
+  @UI.lineItem: [{ position: 30,label: 'Beschreibung' }]
+  @UI.identification: [{ position: 30 }]
+  Beschreibung;
+  @UI.lineItem: [{ position:  40,label: 'Vertragstrafen' }]
+  @UI.identification: [{ position: 40 }]
+  Vertragstrafen;
+  @UI.lineItem: [{ position: 50,label: 'Eskalationsstufen' }]
+  @UI.identification: [{ position: 50 }]
+  Eskalationsstufen;
+  @UI.hidden: true
+
+  CreatedBy;
+  @UI.hidden: true
+
+  CreatedAt;
+  @UI.hidden: true
+
+  ChangedBy;
+  @UI.hidden: true
+
+  ChangedAt;
+  ///* Associations */
+  //_slakunda;
+}

@@ -1,0 +1,181 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.typeName: 'Projection CDS View for ZI_SLAKUNDE'
+@UI.headerInfo.typeNamePlural: 'Projection CDS View for ZI_SLAKUNDE'
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'KundenId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'KundenId'
+annotate view ZC_SLAKUNDE000 with
+{
+  @EndUserText.label: 'KundenId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  }, 
+  {
+    label: 'Items', 
+    id: 'Items', 
+    purpose: #STANDARD, 
+    position: 11 , 
+    type: #LINEITEM_REFERENCE, 
+    targetElement: '_sla_vereinbar'
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'KundenId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'KundenId'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  KundenId;
+  
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Kundenname'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Kundenname'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Kundenname;
+  
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Vertragsbeginn'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Vertragsbeginn'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Vertragsbeginn;
+  
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Vertragsende'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Vertragsende'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Vertragsende;
+  
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Ansprechpartner'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Ansprechpartner'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Ansprechpartner;
+  
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Kontaktinfo'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Kontaktinfo'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Kontaktinfo;
+  
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'CreatedBy'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'CreatedBy'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'CreatedAt'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'CreatedAt'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'ChangedBy'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'ChangedBy'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  ChangedBy;
+  
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'ChangedAt'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'ChangedAt'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  ChangedAt;
+  
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Lastchangedate'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Lastchangedate'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  Lastchangedate;
+  
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Locallastchangedate'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Locallastchangedate'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Locallastchangedate;
+}

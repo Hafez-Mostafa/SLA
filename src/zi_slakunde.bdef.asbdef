@@ -1,0 +1,67 @@
+unmanaged implementation in class zbp_i_slakunde unique;
+strict ( 2 );
+// 1- assure using draft
+
+with draft;
+define behavior for ZI_SLAKUNDE alias SLAKUNDE
+// 2- create draft table
+draft table zslakunde_d
+//late numbering
+early numbering
+lock master
+total etag Locallastchangedate
+authorization master ( instance )
+etag master Locallastchangedate
+{
+  create;
+  update ( features : instance );
+  delete ( features : instance );
+  field ( readonly ) KundenId;
+  // 5- assure using  draft in association
+
+  association _sla_vereinbar { create; with draft; }
+
+  // 3- define  draft actions
+
+  draft action Activate;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  // 4- define  draft determine action Prepare;
+
+  draft determine action Prepare;
+  mapping for zsla_kunden
+    {
+      KundenId        = kunden_id;
+      Kundenname      = kundenname;
+      Kontaktinfo     = kontaktinfo;
+      Vertragsbeginn  = vertragsbeginn;
+      Vertragsende    = vertragsende;
+      Ansprechpartner = ansprechpartner;
+
+    }
+
+
+}
+
+define behavior for ZI_SLAVERINBAR alias SLAVERINBAR
+//late numbering
+draft table zslaverinbar_d
+early numbering
+lock dependent by _slakunda
+authorization dependent by _slakunda
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) SlaId, VkundenId;
+  association _slakunda { with draft; }
+  mapping for zsla_vereinbar
+    {
+      SlaId             = sla_id;
+      VkundenId         = vkunden_id;
+      Beschreibung      = beschreibung;
+      Eskalationsstufen = eskalationsstufen;
+      Vertragstrafen    = vertragstrafen;
+    }
+}

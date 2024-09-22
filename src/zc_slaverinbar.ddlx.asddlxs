@@ -1,0 +1,161 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.typeName: 'Projection CDS View for ZI_SLAVERINBAR'
+@UI.headerInfo.typeNamePlural: 'Projection CDS View for ZI_SLAVERINBAR'
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'SlaId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'SlaId'
+annotate view ZC_SLAVERINBAR with
+{
+  @EndUserText.label: 'SlaId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'SlaId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'SlaId'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  SlaId;
+  
+  @EndUserText.label: 'VkundenId'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'VkundenId'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'VkundenId'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  VkundenId;
+  
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Beschreibung'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Beschreibung'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Beschreibung;
+  
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Vertragstrafen'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Vertragstrafen'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Vertragstrafen;
+  
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Eskalationsstufen'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Eskalationsstufen'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Eskalationsstufen;
+  
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'CreatedBy'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'CreatedBy'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'CreatedAt'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'CreatedAt'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'ChangedBy'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'ChangedBy'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  ChangedBy;
+  
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'ChangedAt'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'ChangedAt'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  ChangedAt;
+  
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Lastchangedate'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Lastchangedate'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  Lastchangedate;
+  
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Locallastchangedate'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Locallastchangedate'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  Locallastchangedate;
+}

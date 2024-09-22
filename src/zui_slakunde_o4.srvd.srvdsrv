@@ -1,0 +1,12 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_SLAKUNDE000'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_SLAKUNDE000'
+  }
+}
+define service ZUI_SLAKUNDE_O4 provider contracts odata_v4_ui {
+  expose ZC_SLAKUNDE000;
+  expose ZC_SLAVERINBAR;
+}

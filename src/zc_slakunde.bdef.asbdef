@@ -1,0 +1,26 @@
+projection;
+strict ( 2 );
+use draft;
+
+define behavior for ZC_SLAKUNDE alias SLAKUNDE
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Activate;
+  use action Discard;
+  use action Edit;
+  use action Resume;
+  use action Prepare;
+
+  use association _sla_vereinbar { create; with draft; }
+}
+
+define behavior for ZC_SLA_Vereinbar alias SLAVERINBAR
+{
+  use update;
+  use delete;
+
+  use association _slakunda { with draft; }
+}

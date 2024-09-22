@@ -1,0 +1,60 @@
+@Metadata.layer: #CORE
+
+
+@UI: {
+ headerInfo:{ typeName: 'Kunde' ,
+typeNamePlural: 'Kunden',
+title:{ type:#STANDARD, label:'Kunde' }
+
+}
+}
+annotate view ZC_SLAKUNDE with
+{
+
+@UI.facet: [{ id: 'SLAKUNDEN' ,
+purpose: #STANDARD,
+type: #IDENTIFICATION_REFERENCE,
+label: 'KUNDE',
+position: 10 }]
+  @UI.lineItem: [{ position: 10,label: 'Kunden ID' }]
+  @UI.identification: [{ position: 10 }]
+
+  KundenId;
+
+  @UI.lineItem: [{ position: 20,label: 'Kunden Name' }]
+  @UI.identification: [{ position: 20 }]
+  Kundenname;
+
+  @UI.lineItem: [{ position: 30 ,label: 'Vertrag Beginn'}]
+  @UI.identification: [{ position: 30 }]
+  Vertragsbeginn;
+
+  @UI.lineItem: [{ position: 40,label: 'Vertrag Eende' }]
+  @UI.identification: [{ position: 40 }]
+
+  Vertragsende;
+
+  @UI.lineItem: [{ position: 50,label: 'Ansprech Partner' }]
+  @UI.identification: [{ position: 50 }]
+  Ansprechpartner;
+
+  @UI.lineItem: [{ position: 60 ,label: 'Kontakt Information'}]
+  @UI.identification: [{ position: 60 }]
+
+  Kontaktinfo;
+
+  @UI.hidden: true
+  CreatedBy;
+  @UI.hidden: true
+
+  CreatedAt;
+
+  @UI.hidden: true
+
+  ChangedBy;
+
+  @UI.hidden: true
+
+  ChangedAt;
+
+}
